@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 import { makeStyles } from "@material-ui/core/styles"
 import Paper from "@material-ui/core/Paper"
+
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: "5px 30px",
@@ -11,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   }
 }))
+
 export default function SongTag({title}) {
   const classes = useStyles();
 

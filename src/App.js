@@ -6,9 +6,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Login from "./components/Login/Login"
-import Dashboard from "./components/Dashboard/Dashboard";
-import SongPage from "./components/SongPage/SongPage";
+import Login from "./pages/Login/Login"
+import Dashboard from "./pages/Dashboard/Dashboard";
+import SongPage from "./pages/SongPage/SongPage";
 
 export default function App() {
   return (

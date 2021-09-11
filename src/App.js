@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css"
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,7 +13,7 @@ import SongPage from "./components/SongPage/SongPage";
 export default function App() {
   return (
     <Router>
-      <div>
+      <div >
         <nav>
           <ul>
             <li>

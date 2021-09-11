@@ -4,9 +4,9 @@ export default function SongTags({songs}) {
   return (
     <div>
       {
-        songs.map(() => {
-
-        })
+        songs.map((title, index) => (
+          <SongTag title={title} key={index} />
+        ))
       }
     </div>
   )

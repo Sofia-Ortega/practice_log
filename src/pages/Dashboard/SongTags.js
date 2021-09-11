@@ -5,7 +5,7 @@ export default function SongTags({songs}) {
     <div>
       {
         songs.map((title, index) => (
-          <SongTag title={title} key={index} />
+          <SongTag title={title} key={index}  />
         ))
       }
     </div>

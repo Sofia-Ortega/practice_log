@@ -7,15 +7,29 @@ const useStyles = makeStyles((theme) => ({
   root: {
     padding: "5px 30px",
   },
+  title: {
+    backgroundColor: "blue",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    textAlign: "center"
+  },
+  buttons: {
+
+  }
 
 }))
+
 
 export default function Login() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <h1>Practice Log</h1>
+      {/* HTML HERE*/}
+      <h1 className={classes.title}>Practice Log</h1>
+
+      <button className={classes.buttons}>Style me</button>
 
       <Link to="/dashboard">
         <Button variant="contained" color="primary">

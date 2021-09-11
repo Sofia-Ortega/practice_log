@@ -10,7 +10,9 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: "10px",
     textAlign: "center",
-    fontStyle: "Bitter"
+    fontStyle: "Bitter",
+    fontSize: "20px",
+    flexGrow: 1
   }
 }))
 

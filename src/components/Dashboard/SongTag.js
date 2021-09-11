@@ -5,16 +5,21 @@ import Paper from "@material-ui/core/Paper"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: "5px 30px",
+    padding: "5px 15vw",
   },
   paper: {
     padding: "10px",
     textAlign: "center",
+    fontStyle: "Bitter"
   }
 }))
 
 export default function SongTag({title}) {
   const classes = useStyles();
+
+  const handleClick = () => {
+    //FIXME: get song info
+  }
 
   return (
     <div className={classes.root}>
@@ -22,6 +27,7 @@ export default function SongTag({title}) {
         <Paper
           className={classes.paper}
           elevation={2}
+          onClick={handleClick}
         >
           {title}
         </Paper>

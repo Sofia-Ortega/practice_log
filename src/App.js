@@ -10,6 +10,11 @@ import Login from "./pages/Login/Login"
 import Dashboard from "./pages/Dashboard/Dashboard";
 import SongPage from "./pages/SongPage/SongPage";
 
+
+
+
+
+
 export default function App() {
   return (
     <Router>

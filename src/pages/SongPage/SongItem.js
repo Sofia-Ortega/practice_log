@@ -6,21 +6,23 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Typography from "@material-ui/core/Typography";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import {createStyles, makeStyles} from "@material-ui/core/styles";
+import {Grid} from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: "5px 15vw"
   },
-  heading: {
+  dateText: {
     fontSize: "20px",
-    fontWeight: "700px",
-    flexBasis: '33.33%',
-    flexShrink: 0,
+    color: "#313a47",
+    // border: "1px solid black",
+  },
+  headingText: {
+    fontSize: "20px",
   },
   subHeading: {
     textDecoration: "underline",
-
   },
   secondaryHeading: {
     fontSize: theme.typography.pxToRem(15),
@@ -40,7 +42,16 @@ export default function SongItem({dat}) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>{dat.title}</Typography>
+          <Grid container>
+            <Grid item xs={1}>
+              <div className={classes.dateText}>
+                {dat.date}
+              </div>
+            </Grid>
+            <Grid item >
+              <Typography className={classes.headingText}>{dat.title}</Typography>
+            </Grid>
+          </Grid>
         </AccordionSummary>
         <AccordionDetails children={<SongDetails noteDat={dat.notes}/>} />
       </Accordion>

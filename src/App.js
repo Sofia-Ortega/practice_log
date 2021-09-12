@@ -11,6 +11,11 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import SongPage from "./pages/SongPage/SongPage";
 import Appbar from "./components/Appbar";
 
+
+
+
+
+
 export default function App() {
   return (
     <Router>

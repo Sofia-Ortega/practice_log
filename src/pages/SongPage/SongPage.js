@@ -23,19 +23,19 @@ const useStyles = makeStyles((theme) => ({
 
 const data = [
   {
-    title: "what a day",
-    notes: "it's a nice song",
+    title: "practicing first time",
+    notes: "it's a nice song. I sound terrible",
     date: "1/2/3"
   },
   {
-    title: "kryptonite",
-    notes: "superman's greatest weakness",
-    date: "2/4/8"
+    title: "after using metronome",
+    notes: "Overall, good beat. I speed up at 2:34",
+    date: "2/4/3"
   },
   {
     title: "my best performance",
     notes: "this is literally perfect",
-    date: "4/31/6"
+    date: "2/6/3"
   }
 ]
 

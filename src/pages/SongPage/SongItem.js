@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import SongDetails from "./SongDetails";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -27,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 export default function SongItem({dat}) {
   const classes = useStyles();
   return (
@@ -40,16 +42,7 @@ export default function SongItem({dat}) {
         >
           <Typography className={classes.heading}>{dat.title}</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <strong>
-              Notes:
-            </strong>
-          </Typography>
-          <Typography>
-            {dat.notes}
-          </Typography>
-        </AccordionDetails>
+        <AccordionDetails children={<SongDetails noteDat={dat.notes}/>} />
       </Accordion>
 
     </div>

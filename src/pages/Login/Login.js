@@ -16,28 +16,28 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0 0 10px 5px #add8e6",
     fontSize: "75px",
     textAlign: "center",
-    
-    
+
+
     backgroundColor: "#FFF",
     borderColor: "blue",
-    
-    
+
+
 
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
-    
+
   },
   buttons: {
     textAlign: "center",
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
-    paddingTop: "30px",
-    paddingBottom: "30px",
+    paddingTop: "15px",
+    paddingBottom: "15px",
     marginBottom: "10px",
-    width: "7%",
-    
+    width: "100px",
+
   }
 
 }))
@@ -51,7 +51,7 @@ export default function Login() {
       {/* HTML HERE*/}
       <h1 className={classes.title}>Rekora</h1>
 
-      
+
 
       <Link to="/dashboard">
         <Button variant="contained" color="primary" className={classes.buttons}>

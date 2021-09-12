@@ -48,6 +48,11 @@ export default function SimpleAccordion() {
     if(record === false) setRecord(true)
     else setRecord(false)
   }
+
+  const addTitleSong = (title) => {
+    console.log("Add title: ", title)
+
+  }
   return (
     <div className={classes.root}>
       <Header title={"Song"} />
@@ -59,7 +64,7 @@ export default function SimpleAccordion() {
         </Button>
       </div>
       {
-        record ? <RecorderWrapper /> : false
+        record ? <RecorderWrapper addTitleSong={addTitleSong} /> : false
       }
       <Footer />
     </div>

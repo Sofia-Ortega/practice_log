@@ -9,25 +9,13 @@ import {
 import Login from "./pages/Login/Login"
 import Dashboard from "./pages/Dashboard/Dashboard";
 import SongPage from "./pages/SongPage/SongPage";
+import Appbar from "./components/Appbar";
 
 export default function App() {
   return (
     <Router>
       <div >
-        <nav>
-          <ul>
-            <li>
-              <Link to="/login">Home</Link>
-            </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-            <li>
-              <Link to="/song">Song</Link>
-            </li>
-          </ul>
-        </nav>
-
+        <Appbar />
         <Switch>
           <Route path="/login">
             <Login />

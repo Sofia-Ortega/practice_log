@@ -1,11 +1,11 @@
 import React from "react"
-
-export default function SongItems({songs}) {
+import SongItem from "./SongItem";
+export default function SongItems({data}) {
   return(
     <div>
       {
-        songs.map((song) => (
-          <div>Here</div>
+        data.map((dat) => (
+          <SongItem dat={dat} />
         ))
       }
     </div>

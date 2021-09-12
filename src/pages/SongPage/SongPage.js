@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SongItems from "./SongItems";
 import Header from "../../components/Header";
 import Button from "@material-ui/core/Button";
 import MicIcon from '@material-ui/icons/Mic';
 import Footer from "../../components/Footer";
+import RecorderWrapper from "./RecorderWrapper";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,17 +42,25 @@ const data = [
 
 export default function SimpleAccordion() {
   const classes = useStyles();
+  const [record, setRecord] = useState(false)
 
+  const handleClick = () => {
+    if(record === false) setRecord(true)
+    else setRecord(false)
+  }
   return (
     <div className={classes.root}>
       <Header title={"Song"} />
       <SongItems data={data}  />
       <div className={classes.btn}>
-        <Button variant="contained" color="secondary" >
+        <Button onClick={handleClick} variant="contained" color="secondary" >
           <div>Record</div>
           <MicIcon />
         </Button>
       </div>
+      {
+        record ? <RecorderWrapper /> : false
+      }
       <Footer />
     </div>
   );
